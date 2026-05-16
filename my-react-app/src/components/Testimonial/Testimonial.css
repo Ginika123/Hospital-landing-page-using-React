@@ -1,0 +1,196 @@
+/* MAIN SECTION */
+.tc-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px 8%;
+    background: #96badd;
+    flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.left {
+    flex: 1;
+    min-width: 320px;
+}
+
+.left h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* TESTIMONIAL CARD */
+.testimonial-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+.testimonial-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #007bff;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.testimonial-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+    color: #111;
+    font-size: 16px;
+}
+
+/* RIGHT SIDE */
+.right {
+    flex: 1;
+    min-width: 320px;
+}
+
+.right h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* FORM */
+.booking-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* INPUTS */
+.booking-form input,
+.booking-form textarea,
+.booking-form select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.booking-form input:focus,
+.booking-form textarea:focus,
+.booking-form select:focus {
+    border-color: #007bff;
+}
+
+/* TEXTAREA */
+.booking-form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+/* BUTTON */
+.booking-form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking-form button:hover {
+    background: #0056b3;
+}
+
+/* ========================= */
+/* RESPONSIVENESS */
+/* ========================= */
+
+/* TABLETS */
+@media (max-width: 992px) {
+
+    .tc-section {
+        gap: 30px;
+        padding: 50px 5%;
+    }
+
+    .left h2,
+    .right h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .tc-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .booking-form {
+        padding: 20px;
+    }
+
+    .left h2,
+    .right h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+
+    .testimonial-img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .testimonial-card p {
+        font-size: 14px;
+    }
+
+    .booking-form input,
+    .booking-form textarea,
+    .booking-form select {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .booking-form button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

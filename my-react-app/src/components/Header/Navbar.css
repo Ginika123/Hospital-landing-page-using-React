@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: white;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 25px;
+    
+    
+}
+
+
+.dark-box{
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+
+
+
+.logo h1{
+    font-size: 30px;
+    color: #051135;
+    font-weight: bold;
+}
+
+
+
+.nav-links a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #051135;
+    font-size: 23px;
+}
+
+.btn{
+    padding: 10px 30px;
+    background-color: tomato;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.hamburger{
+    
+    display: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+
+}
+
+
+.nav-links.active{
+    display: flex;
+}
+
+
+
+body.dark {
+    background-color: #0f172a;
+    color: white;
+}
+
+/* Header */
+body.dark header {
+    background-color: #111827;
+}
+
+/* Hero */
+body.dark .hero {
+    background-image: none;
+    background-color: #0f172a;
+}
+
+
+body.dark .nav-links a{
+    color: white;
+}
+
+/* Text fixes */
+body.dark h1,
+body.dark p {
+    color: white;
+}
+
+/* Buttons */
+body.dark button {
+    background-color: #334155;
+    color: white;
+}
+
+body.dark button:hover {
+    background-color: #1e293b;
+}
+
+@media (max-width: 768px){
+    
+
+    .hamburger{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+
+    .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-size: 30px;
+}
+}
+
+
+
